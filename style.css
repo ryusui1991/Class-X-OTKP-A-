@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f9fbff;
+  color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #0d47a1;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #1976d2, #64b5f6);
+  color: white;
+}
+
+/* === TOMBOL MUSIK (DITEMPEL DI HERO) === */
+.music-btn {
+  margin-top: 25px;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  background: white;
+  color: #1976d2;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.music-btn:hover {
+  background: #e3f2fd;
+  transform: scale(1.05);
+}
+
+/* DARK MODE tombol musik */
+body.dark .music-btn {
+  background: #1e1e1e;
+  color: #90caf9;
+}
+
+.section {
+  padding: 60px 30px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0d47a1;
+}
+
+.big-title {
+  text-align: center;
+  font-size: 32px;
+  color: #0d47a1;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+/* CARD SISWA */
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.card:hover img {
+  filter: blur(2px);
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.4s;
+  text-align: center;
+  padding: 10px;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+/* ORGANISASI */
+.blue {
+  background: #e3f2fd;
+}
+
+.org-card {
+  background: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+/* SEARCH */
+.search-wrapper {
+  position: relative;
+  max-width: 420px;
+  margin: 0 auto 40px;
+}
+
+.search-box {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 25px;
+  border: 2px solid #90caf9;
+  outline: none;
+}
+
+#clearBtn {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: none;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0d47a1;
+  color: white;
+}
+
+/* DARK MODE */
+body.dark {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+body.dark .navbar,
+body.dark footer {
+  background: #0a1a33;
+}
+
+body.dark .blue {
+  background: #1c2b45;
+}
+
+body.dark .card,
+body.dark .org-card {
+  background: #1e1e1e;
+}
+
+/* ANIMASI */
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.8s;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelas 10 X OTKP A</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">10 X OTKP A</div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#siswa">Daftar Siswa</a></li>
+    <li><a href="#struktur">Struktur</a></li>
+    <li><a href="#tentang">Tentang</a></li>
+    <li><button id="darkToggle">🌙</button></li>
+  </ul> 
+</nav>
+
+<section id="home" class="hero fade">
+  <h1>Selamat Datang</h1>
+  <p>Website Resmi Kelas 10 X OTKP A</p>
+
+  <!-- TOMBOL MUSIK -->
+  <button id="playMusic" class="music-btn">🎵 Putar Musik</button>
+</section>
+
+<section id="siswa" class="section">
+  <h2 class="title fade">Daftar Siswa</h2>
+
+  <div class="search-wrapper fade">
+    <input type="text" id="searchInput" class="search-box" placeholder="🔍 Cari nama siswa...">
+    <span id="clearBtn">✖</span>
+  </div>
+
+  <div class="grid">
+    <div class="card fade"><img src="images/arif.jpg"><div class="overlay">Arif Syammsul Ma'arif</div></div>
+    <div class="card fade"><img src="images/daffa.jpg"><div class="overlay">Daffa Naufal Afkar</div></div>
+    <div class="card fade"><img src="images/dina.jpg"><div class="overlay">Dina Lutfiana</div></div>
+    <div class="card fade"><img src="images/fikri.jpg"><div class="overlay">Fikri Ainusyamsi Wahyudin</div></div>
+    <div class="card fade"><img src="images/frizca.jpg"><div class="overlay">Frizca Almira Azqiatunisa Oktaviani</div></div>
+    <div class="card fade"><img src="images/isma.jpg"><div class="overlay">Isma Khoirunnisa</div></div>
+    <div class="card fade"><img src="images/mala.jpg"><div class="overlay">Ma'la Halimatul Alawiah</div></div>
+    <div class="card fade"><img src="images/may.jpg"><div class="overlay">May Cilla Nuranggraeni</div></div>
+    <div class="card fade"><img src="images/midah.jpg"><div class="overlay">Midah Adawiah</div></div>
+    <div class="card fade"><img src="images/farhan.jpg"><div class="overlay">Muhammad Farhan Fahrurrohman</div></div>
+    <div class="card fade"><img src="images/nizam.jpg"><div class="overlay">Muhammad Nizam Nurjaman</div></div>
+    <div class="card fade"><img src="images/prayoga.jpg"><div class="overlay">Muhammad Prayoga</div></div>
+    <div class="card fade"><img src="images/azkan.jpg"><div class="overlay">Muhammad Azkan Nasal</div></div>
+    <div class="card fade"><img src="images/najwa.jpg"><div class="overlay">Najwa Fajriah</div></div>
+    <div class="card fade"><img src="images/natiq.jpg"><div class="overlay">Natiq Tazqia</div></div>
+    <div class="card fade"><img src="images/neng.jpg"><div class="overlay">Neng Sarifah</div></div>
+    <div class="card fade"><img src="images/nurdwi.jpg"><div class="overlay">Nur Dwi Rahma Dini</div></div>
+    <div class="card fade"><img src="images/nuri.jpg"><div class="overlay">Nuri Nur Hamidah</div></div>
+    <div class="card fade"><img src="images/ratih.jpg"><div class="overlay">Ratih Ratna Dilla</div></div>
+    <div class="card fade"><img src="images/risya.jpg"><div class="overlay">Risya Amelia</div></div>
+    <div class="card fade"><img src="images/rizki.jpg"><div class="overlay">Rizki Erlan Nugraha</div></div>
+    <div class="card fade"><img src="images/shelin.jpg"><div class="overlay">Shelin Nurhasanah</div></div>
+    <div class="card fade"><img src="images/siti.jpg"><div class="overlay">Siti Halwa</div></div>
+    <div class="card fade"><img src="images/sopi.jpg"><div class="overlay">Sopi Khoirotunnisa</div></div>
+    <div class="card fade"><img src="images/wulan.jpg"><div class="overlay">Wulan</div></div>
+    <div class="card fade"><img src="images/ulum.jpg"><div class="overlay">Muhammad Ulum Musyarof Brilian</div></div>
+  </div>
+</section>
+
+<section id="struktur" class="section blue">
+  <h2 class="big-title fade">STRUKTUR ORGANISASI<br>KELAS 10 X OTKP A</h2>
+  <div class="grid">
+    <div class="org-card fade">👨‍🏫<h3>Wali Kelas</h3><p>Pak Hilmi</p></div>
+    <div class="org-card fade">💼<h3>Ketua</h3><p>Fikri</p></div>
+    <div class="org-card fade">💼<h3>Wakil</h3><p>Isma</p></div>
+    <div class="org-card fade">✏️<h3>Sekretaris</h3><p>Ratih, Nizam</p></div>
+    <div class="org-card fade">💰<h3>Bendahara</h3><p>Frizca, Sopi</p></div>
+    <div class="org-card fade">🧹<h3>Kebersihan</h3><p>Shelin, Daffa</p></div>
+  </div>
+</section>
+
+<section id="tentang" class="section fade">
+  <h2 class="title">Tentang Kelas</h2>
+  <p class="text">Kelas 10 X OTKP A adalah kelas solid, kreatif, dan penuh kenangan.</p>
+</section>
+
+<footer>
+  © 2025 Kelas 10 X OTKP A – Dibuat untuk kenangan.
+</footer>
+
+<!-- AUDIO -->
+<audio id="bgAudio">
+  <source src="audio/musik.mp3" type="audio/mpeg">
+</audio>
+
+<!-- SCRIPT -->
+<script>
+  const audio = document.getElementById("bgAudio");
+  const btn = document.getElementById("playMusic");
+
+  btn.addEventListener("click", () => {
+    if (audio.paused) {
+      audio.play();
+      btn.textContent = "⏸ Pause Musik";
+    } else {
+      audio.pause();
+      btn.textContent = "🎵 Putar Musik";
+    }
+  });
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
